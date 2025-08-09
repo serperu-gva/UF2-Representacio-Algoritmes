@@ -1,1 +1,0 @@
-import{_ as a,c as i,o as r,a4 as s}from"./chunks/framework.D8ILtLtz.js";const p=JSON.parse('{"title":"Objectius","description":"","frontmatter":{},"headers":[],"relativePath":"objectius.md","filePath":"objectius.md"}'),t={name:"objectius.md"};function l(n,e,o,c,u,d){return r(),i("div",null,e[0]||(e[0]=[s("",4)]))}const f=a(t,[["render",l]]);export{p as __pageData,f as default};
