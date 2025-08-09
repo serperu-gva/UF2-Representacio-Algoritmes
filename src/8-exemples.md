@@ -39,11 +39,7 @@ Fi
 
 ### Exemple 3-2
 
-<<<<<<< HEAD
 **Enunciat**: Desenvolupeu un algoritme que permeta determinar l'àrea i el volum d'un cilindre donat el seu radi (R) i altura (H).
-=======
-**Enunciat**: Desenvolupeu un algorisme que permeta determinar l'àrea i el volum d'un cilindre donat el seu radi (R) i altura (H).
->>>>>>> bbe8672ea77f8ba13559f366ebebc573fe549590
 
 ::: tabs
 == Pseudocodi
@@ -290,15 +286,7 @@ graph TD;
 
 ### Exemple 4-2-3
 
-<<<<<<< HEAD
-**Enunciat**: Desenvolupeu un algoritme que permeta llegir dos valors diferents, determinar quin dels dos valors és el major i escriure'l.
-=======
-<<<<<<< HEAD:src/5-exemples.md
-**Enunciat**: Desenvolupeu un algorisme que permeta llegir dos valors diferents, determinar quin dels dos valors és el major i escriure'l.
-=======
 **Enunciat**: Desenvolupeu un algoritme que permeta llegir dos valors diferents, determinar quin dels dos valors és el major i escriure’l.
->>>>>>> 3964625140ef53ff86781ffe6848648185d08003:src/8-exemples.md
->>>>>>> bbe8672ea77f8ba13559f366ebebc573fe549590
 
 ::: tabs
 == Pseudocodi
@@ -1458,6 +1446,7 @@ graph TD;
 
 ::: tabs
 == Pseudocodi
+
 ```Pseudocodi
 Inici
   Escriure "Introduïu l'import de la compra:"
