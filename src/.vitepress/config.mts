@@ -1,12 +1,6 @@
-//import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
-import { withMermaid } from "vitepress-plugin-mermaid";
 
-// https://vitepress.dev/reference/site-config
-export default withMermaid({
-  lang: 'ca-ES',
-  title: 'UF2',
-  description: 'Descripció',
+export default ({
   base: '/UF2/',
   outDir: '../docs',
   markdown: {
@@ -14,66 +8,102 @@ export default withMermaid({
       md.use(tabsMarkdownPlugin)
     }
   },
-  mermaid: {
-    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
-  },
-  mermaidPlugin: {
-    class: "mermaid my-class", // set additional css classes for parent container 
-  },
   head: [
-    //['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    //['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-    //['link', { href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap', rel: 'stylesheet' }],
-    //['link', { rel: 'icon', type: 'image/png', href: '/img/logo.png' }]
+  ['link', { rel: 'icon', href: '/img/logo.png' }],
   ],
-  themeConfig: {
-    siteTitle: 'Representació d\'algoritmes',
-    logo: '/img/logo.png',
-    nav: [
-      { text: '🏠 Inici', link: '/' },
-      { text: '📋 Objectius', link: '/objectius' },
-      { text: '📚 Continguts', items: [
-        { text: '1. Introducció', link: '/1-introduccio' },        
-        { text: '2. Tipus de representació d\'algoritmes', link: '/2-representacio' },
-        { text: '3. Instruccions bàsiques', link: '/3-instruccions' },
-        { text: '4. Estructures de control', link: '/4-estructures' },
-        { text: '5. Casos d\'estudi i patrons comuns', link: '/5-casos-estudi' },
-        { text: '6. Eines digitals per a diagrames de flux', link: '/6-eines-digitals' },
-        { text: '7. Exercicis', link: '/7-enunciats' },
-        { text: '8. Exemples', link: '/8-exemples' },
-      ]}
-    ],
-    sidebar: [
-      {
-        text: '📚 Continguts',
-        items: [
-          { text: '1. Introducció', link: '/1-introduccio' },          
-          { text: '2. Tipus de representació d\'algoritmes', link: '/2-representacio' },
-          { text: '3. Instruccions bàsiques', link: '/3-instruccions' },
-          { text: '4. Estructures de control', link: '/4-estructures' },
-          { text: '5. Casos d\'estudi i patrons comuns', link: '/5-casos-estudi' },
-          { text: '6. Eines digitals per a diagrames de flux', link: '/6-eines-digitals' },
-          { text: '7. Exercicis', link: '/7-enunciats' },
-          { text: '8. Exemples', link: '/8-exemples' },
-          { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
-          { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
-        ]
+  locales: {
+    root: {
+      label: 'Español',
+      lang: 'es-ES',
+      link: '/',
+      title: 'UF2 - Fundamentos de Programación',
+      description: 'Unidad 2 donde se abordan los conceptos básicos de representación de algoritmos.',
+      themeConfig: {
+        siteTitle: 'Representación de Algoritmos',
+        outline: { label: 'En esta página' },
+          docFooter: { prev: 'Anterior', next: 'Siguiente' },
+          nav: [
+            { text: '🏠 Inicio', link: '/' },
+            { text: '📚 Contenidos', items: [
+              { text: '1. Introducción', link: '/1-introduccio' },        
+              { text: '2. Tipos de representación de algoritmos', link: '/2-representacio' },
+              { text: '3. Instrucciones básicas', link: '/3-instruccions' },
+              { text: '4. Estructuras de control', link: '/4-estructures' },
+              { text: '5. Casos de estudio y patrones comunes', link: '/5-casos-estudi' },
+              { text: '6. Herramientas digitales para diagramas de flujo', link: '/6-eines-digitals' },
+              { text: '✏️ Ejercicios', link: '/7-enunciats' },
+              { text: '💡 Ejemplos', link: '/8-exemples' },
+            ]}
+          ]
       }
-    ],
+    },
+    ca: {
+      label: 'Valencià',
+      lang: 'ca-ES',
+      link: '/ca/',
+      title: 'UF2 - Representació d\'algoritmes',
+      description: 'Unitat 2 on s\'aborden els conceptes bàsics de representació d\'algoritmes.',
+      themeConfig: {
+        siteTitle: 'Representació d\'algoritmes',
+        outline: { label: 'En aquesta pàgina' },
+          docFooter: { prev: 'Anterior', next: 'Següent' },
+          nav: [
+            { text: '🏠 Inici', link: '/ca/index' },
+            { text: '📚 Continguts', items: [
+              { text: '1. Introducció', link: '/ca/1-introduccio' },        
+              { text: '2. Tipus de representació d\'algoritmes', link: '/ca/2-representacio' },
+              { text: '3. Instruccions bàsiques', link: '/ca/3-instruccions' },
+              { text: '4. Estructures de control', link: '/ca/4-estructures' },
+              { text: '5. Casos d\'estudi i patrons comuns', link: '/ca/5-casos-estudi' },
+              { text: '6. Eines digitals per a diagrames de flux', link: '/ca/6-eines-digitals' },
+              { text: '✏️ Exercicis', link: '/ca/7-enunciats' },
+              { text: '💡 Exemples', link: '/ca/8-exemples' },
+            ]}
+          ]
+      }
+    }
+  },
+  // Tema por idioma
+  themeConfig: {
+    logo: '/img/logo.png',
     socialLinks: [
-      { icon: 'github', link: '' }
+      { icon: 'github', link: 'https://github.com/GGEdu' }
     ],
+    sidebar: {
+      '/': [
+        { text: '📚 Contenidos', items: [
+            { text: '1. Introducción', link: '/1-introduccio' },        
+            { text: '2. Tipos de representación de algoritmos', link: '/2-representacio' },
+            { text: '3. Instrucciones básicas', link: '/3-instruccions' },
+            { text: '4. Estructuras de control', link: '/4-estructures' },
+            { text: '5. Casos de estudio y patrones comunes', link: '/5-casos-estudi' },
+            { text: '6. Herramientas digitales para diagramas de flujo', link: '/6-eines-digitals' },
+            { text: '✏️ Ejercicios', link: '/7-enunciats' },
+            { text: '💡 Ejemplos', link: '/8-exemples' },
+            { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
+            { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
+          ]
+        }
+      ],
+      '/ca/': [
+        { text: '📚 Continguts', items: [
+            { text: '1. Introducció', link: '/ca/1-introduccio' },        
+            { text: '2. Tipus de representació d\'algoritmes', link: '/ca/2-representacio' },
+            { text: '3. Instruccions bàsiques', link: '/ca/3-instruccions' },
+            { text: '4. Estructures de control', link: '/ca/4-estructures' },
+            { text: '5. Casos d\'estudi i patrons comuns', link: '/ca/5-casos-estudi' },
+            { text: '6. Eines digitals per a diagrames de flux', link: '/ca/6-eines-digitals' },
+            { text: '✏️ Exercicis', link: '/ca/7-enunciats' },
+            { text: '💡 Exemples', link: '/ca/8-exemples' },
+            { text: '<img src="../img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
+            { text: '<img src="../img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
+          ]
+        }
+      ]
+    },
     footer: {
-      message: "CEEDCV - Centre Específic d'Educació a Distància de la Comunitat Valenciana",
-      copyright: 'Copyright © 2024-2025'
-    },
-    outline: {
-      label: 'En aquesta pàgina'
-    },
-    docFooter: {
-      prev: 'Anterior',
-      next: 'Següent'
-    },  
-    
+      message: '<img src="/img/logo-autor.png" alt="Autor Principal" style="height:60px; margin: 0 auto; display:block;" />',
+      copyright: 'Copyright © 2025'
+    }
   }
 })

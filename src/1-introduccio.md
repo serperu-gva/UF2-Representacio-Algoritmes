@@ -1,5 +1,7 @@
-# 1. Introducció
+# Aviso de traducción
 
-Com es va veure en la UF1, existeixen diferents tipus de representacions d'algoritmes. A part del llenguatge natural (poc usat per ser ambigu i poc precís) existeixen diferents tipus de representacions d'algoritmes com el **pseudocodi** o els **diagrames de flux**. També existeixen variacions d'aquests tipus com els diagrames de Chapín que també usa símbols per a descriure l'algoritme però d'una manera diferent als diagrames de flux.
+::: warning Aviso de traducción
+Estamos trabajando para ofrecer la versión en español con el nivel y la calidad que os merecéis. Este módulo fue impartido originalmente en valenciano en el centro docente y lo estamos adaptando progresivamente. Gracias por tu paciencia.
+:::
 
-En aquesta unitat ens centrarem en els dos principals per a abreviar i donar una versió genèrica de la representació d'algoritmes.
+<a href="/UD2/ca/index" style="display:inline-block;padding:0.4em 0.8em;border-radius:6px;background:#3e63dd;color:white;text-decoration:none;margin:4px 0;">Ver contenido en valenciano →</a>
