@@ -19,7 +19,7 @@ export default ({
       title: 'UF2 - Fundamentos de Programación',
       description: 'Unidad 2 donde se abordan los conceptos básicos de representación de algoritmos.',
       themeConfig: {
-        siteTitle: 'Representación de Algoritmos',
+        siteTitle: 'Representación de </br>Algoritmos',
         outline: { label: 'En esta página' },
           docFooter: { prev: 'Anterior', next: 'Siguiente' },
           nav: [
@@ -41,7 +41,7 @@ export default ({
       label: 'Valencià',
       lang: 'ca-ES',
       link: '/ca/',
-      title: 'UF2 - Representació d\'algoritmes',
+      title: 'UF2 - Representació </br>d\'algoritmes',
       description: 'Unitat 2 on s\'aborden els conceptes bàsics de representació d\'algoritmes.',
       themeConfig: {
         siteTitle: 'Representació d\'algoritmes',
