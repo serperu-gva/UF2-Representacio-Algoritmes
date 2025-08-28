@@ -13,6 +13,8 @@ export default {
     customEnhanceApp(ctx)
     
     if (typeof window !== 'undefined') {
+      let diagramCounter = 0; // Contador global para IDs únicos
+      
       const initMermaid = async () => {
         try {
           const mermaid = (await import('mermaid')).default;
@@ -22,15 +24,23 @@ export default {
           });
           
           const renderDiagrams = () => {
-            document.querySelectorAll('.language-mermaid:not([data-processed])').forEach((el, i) => {
+            document.querySelectorAll('.language-mermaid:not([data-processed])').forEach((el) => {
               const code = el.textContent?.replace(/^mermaid\s*/i, '').trim();
               if (code) {
                 el.setAttribute('data-processed', 'true');
-                mermaid.render(`diagram-${i}`, code).then(result => {
+                const uniqueId = `mermaid-diagram-${Date.now()}-${++diagramCounter}`;
+                
+                mermaid.render(uniqueId, code).then(result => {
                   const div = document.createElement('div');
                   div.innerHTML = result.svg;
+                  div.className = 'mermaid-container';
                   el.parentNode?.insertBefore(div, el);
                   (el as HTMLElement).style.display = 'none';
+                }).catch(error => {
+                  console.error(`Error rendering diagram ${uniqueId}:`, error);
+                  // Mostrar el código original si hay error
+                  (el as HTMLElement).style.display = 'block';
+                  el.removeAttribute('data-processed');
                 });
               }
             });
