@@ -3,7 +3,8 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 export default ({
   base: '/UF2/',
   outDir: '../docs',
-  markdown: {
+  markdown: {    
+    mermaid: true,
     config(md) {
       md.use(tabsMarkdownPlugin)
     }
