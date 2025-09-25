@@ -51,10 +51,9 @@ L'**estructura alternativa simple** s'utilitza quan hi ha una única condició q
 >    D --> E[/LLEGIR resposta/]
 >    E --> F{resposta = 'S'?}
 >    F -- Sí --> G["total = total - (total * 0,1)"]
->    F -- No --> H[No hi ha descompte]
+>    F -- No --> I
 >    G --> I[/ESCRIURE total/]
->    H --> I
->    I --> J((Fi))
+>>   I --> J((Fi))
 >
 >    classDef romboide fill:#188CC4, color:white;
 >    classDef rombo fill:#A08DB1, color:white;
