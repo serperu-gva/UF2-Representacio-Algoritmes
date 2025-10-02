@@ -107,8 +107,8 @@ L'**estructura alternativa doble** permet executar diferents conjunts d'instrucc
 >    C --> D[/"ESCRIURE 'Teniu una targeta de fidelitat? Sí (S), No (N):'"/]
 >    D --> E[/LLEGIR resposta/]
 >    E --> F{resposta = 'S'?}
->    F -- Sí --> G["total = total - (total * 0,1)"]
->    F -- No --> H[No hi ha descompte]
+>    F -- Sí --> G["total = total - (total * 0,2)"]
+>    F -- No --> H["total = total - (total * 0,1)"]
 >    G --> I[/ESCRIURE total/]
 >    H --> I
 >    I --> J((Fi))
