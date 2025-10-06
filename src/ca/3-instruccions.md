@@ -173,7 +173,7 @@ Aquests exemples mostren com es maneja l'entrada i eixida de dades per a permetr
 >   ESCRIURE "Introduïu el nombre d'hores:".
 >   LLEGIR hores.
 >   minuts ← hores * 60.
->   ESCRIURE `minuts`.
+>   ESCRIURE minuts.
 > FI
 > ```
 >
@@ -181,7 +181,7 @@ Aquests exemples mostren com es maneja l'entrada i eixida de dades per a permetr
 >
 > ```mermaid
 >   graph TD
->     A((INICI)) --> B[/ESCRIURE "Introduïu el nombre d'hores:/]
+>     A((INICI)) --> B[/ESCRIURE "Introduïu el nombre d'hores:"/]
 >     B --> C[/LLEGIR hores/]
 >     C --> D[minuts = hores * 60]
 >     D --> E[/"ESCRIURE minuts"/]
@@ -221,9 +221,9 @@ Aquests exemples mostren com es maneja l'entrada i eixida de dades per a permetr
 >
 > ```mermaid
 >   graph TD
->     A((INICI)) --> B[/ESCRIURE "Introduïu la base del triangle:/]
+>     A((INICI)) --> B[/ESCRIURE "Introduïu la base del triangle:"/]
 >     B --> C[/LLEGIR base/]
->     C --> D[/ESCRIURE "Introduïu l'altura del triangle:/]
+>     C --> D[/ESCRIURE "Introduïu l'altura del triangle:"/]
 >     D --> E[/LLEGIR altura/]
 >     E --> F[area = base * altura / 2]
 >     F --> G[/ESCRIURE area/]
