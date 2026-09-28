@@ -32,33 +32,8 @@ export default ({
               { text: '4. Estructuras de control', link: '/4-estructures' },
               { text: '5. Casos de estudio y patrones comunes', link: '/5-casos-estudi' },
               { text: '6. Herramientas digitales para diagramas de flujo', link: '/6-eines-digitals' },
-              { text: '✏️ Ejercicios', link: '/7-enunciats' },
               { text: '💡 Ejemplos', link: '/8-exemples' },
-            ]}
-          ]
-      }
-    },
-    ca: {
-      label: 'Valencià',
-      lang: 'ca-ES',
-      link: '/ca/',
-      title: 'UF2 - Representació </br>d\'algoritmes',
-      description: 'Unitat 2 on s\'aborden els conceptes bàsics de representació d\'algoritmes.',
-      themeConfig: {
-        siteTitle: 'Representació d\'algoritmes',
-        outline: { label: 'En aquesta pàgina' },
-          docFooter: { prev: 'Anterior', next: 'Següent' },
-          nav: [
-            { text: '🏠 Inici', link: '/ca/index' },
-            { text: '📚 Continguts', items: [
-              { text: '1. Introducció', link: '/ca/1-introduccio' },        
-              { text: '2. Tipus de representació d\'algoritmes', link: '/ca/2-representacio' },
-              { text: '3. Instruccions bàsiques', link: '/ca/3-instruccions' },
-              { text: '4. Estructures de control', link: '/ca/4-estructures' },
-              { text: '5. Casos d\'estudi i patrons comuns', link: '/ca/5-casos-estudi' },
-              { text: '6. Eines digitals per a diagrames de flux', link: '/ca/6-eines-digitals' },
-              { text: '✏️ Exercicis', link: '/ca/7-enunciats' },
-              { text: '💡 Exemples', link: '/ca/8-exemples' },
+              { text: '✏️ Ejercicios', link: '/7-enunciats' }
             ]}
           ]
       }
@@ -67,9 +42,6 @@ export default ({
   // Tema por idioma
   themeConfig: {
     logo: '/img/logo.png',
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/GGEdu' }
-    ],
     sidebar: {
       '/': [
         { text: '📚 Contenidos', items: [
@@ -79,25 +51,9 @@ export default ({
             { text: '4. Estructuras de control', link: '/4-estructures' },
             { text: '5. Casos de estudio y patrones comunes', link: '/5-casos-estudi' },
             { text: '6. Herramientas digitales para diagramas de flujo', link: '/6-eines-digitals' },
-            { text: '✏️ Ejercicios', link: '/7-enunciats' },
             { text: '💡 Ejemplos', link: '/8-exemples' },
-            { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
-            { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
-          ]
-        }
-      ],
-      '/ca/': [
-        { text: '📚 Continguts', items: [
-            { text: '1. Introducció', link: '/ca/1-introduccio' },        
-            { text: '2. Tipus de representació d\'algoritmes', link: '/ca/2-representacio' },
-            { text: '3. Instruccions bàsiques', link: '/ca/3-instruccions' },
-            { text: '4. Estructures de control', link: '/ca/4-estructures' },
-            { text: '5. Casos d\'estudi i patrons comuns', link: '/ca/5-casos-estudi' },
-            { text: '6. Eines digitals per a diagrames de flux', link: '/ca/6-eines-digitals' },
-            { text: '✏️ Exercicis', link: '/ca/7-enunciats' },
-            { text: '💡 Exemples', link: '/ca/8-exemples' },
-            { text: '<img src="../img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
-            { text: '<img src="../img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
+            { text: '✏️ Ejercicios', link: '/7-enunciats' },
+            { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' }
           ]
         }
       ]

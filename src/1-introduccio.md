@@ -1,7 +1,5 @@
-# Aviso de traducción
+# 1. Introducción
 
-::: warning Aviso de traducción
-Estamos trabajando para ofrecer la versión en español con el nivel y la calidad que os merecéis. Este módulo fue impartido originalmente en valenciano en el centro docente y lo estamos adaptando progresivamente. Gracias por tu paciencia.
-:::
+Como se vio en la UF1, existen diferentes tipos de representaciones de algoritmos. Además del lenguaje natural (poco utilizado por ser ambiguo y poco preciso), existen diferentes tipos de representaciones de algoritmos como el **pseudocódigo** o los **diagramas de flujo**. También existen variaciones de estos tipos como los diagramas de Chapín, que también utilizan símbolos para describir el algoritmo, pero de una manera diferente a los diagramas de flujo.
 
-<a href="/UD2/ca/index" style="display:inline-block;padding:0.4em 0.8em;border-radius:6px;background:#3e63dd;color:white;text-decoration:none;margin:4px 0;">Ver contenido en valenciano →</a>
+En esta unidad nos centraremos en los dos principales para abreviar y dar una versión genérica de la representación de algoritmos.
