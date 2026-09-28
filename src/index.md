@@ -1,6 +1,6 @@
 # UF02. Representación de algoritmos
 
-\::: tip Información del curso
+::: tip Información del curso
 
 **Autores:** Guillermo Garrido Portes / David Tur Sanmateu / María Bañuls / Sergio Pérez
 
@@ -8,17 +8,17 @@
 
 ![Logo CC](/img/logo-cc.png){logo}
 
-\:::
+:::
 
-\::: info Síntesis de la unidad
+::: info Síntesis de la unidad
 
 Esta unidad tiene como objetivo introduciros en las diferentes formas de representación de algoritmos. Aprenderéis a expresar de manera clara y estructurada las instrucciones que resuelven un problema, utilizando herramientas como el pseudocódigo y los diagramas de flujo. Estas técnicas os ayudarán a planificar mejor la lógica de vuestros programas antes de codificarlos.
 
-\:::
+:::
 
 ## 📋 Objetivos del Curso {.animate-title}
 
-\::: tip Objetivos cubiertos y relación con RA
+::: tip Objetivos cubiertos y relación con RA
 
 Este tema introduce el diseño de soluciones lógicas a través de algoritmos, sin profundizar todavía en la sintaxis de un lenguaje de programación.
 
@@ -26,11 +26,11 @@ Este tema introduce el diseño de soluciones lógicas a través de algoritmos, s
 - Objetivo 2.2: Utilizar las herramientas digitales adecuadas para crear diagramas de flujo.
 - Objetivo 2.3: Aplicar estructuras de control básicas (secuenciales, alternativas) para resolver problemas simples.
 
-\:::
+:::
 
 ## ⚙ Metodología {.animate-title}
 
-\::: tip Aprendizaje Activo
+::: tip Aprendizaje Activo
 
 Este curso sigue una metodología de aprendizaje activo, combinando teoría y práctica:
 
@@ -39,7 +39,7 @@ Este curso sigue una metodología de aprendizaje activo, combinando teoría y pr
 - 🔄 **Ejercicios interactivos** para reforzar el aprendizaje
 - 📈 **Evaluación continua** del progreso
 
-\:::
+:::
 
 ## 🔗 Recursos adicionales {.animate-title}
 
