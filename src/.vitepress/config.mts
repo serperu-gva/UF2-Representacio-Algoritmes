@@ -17,7 +17,7 @@ export default ({
       label: 'Español',
       lang: 'es-ES',
       link: '/',
-      title: 'UF2 - Fundamentos de Programación',
+      title: 'UF2 - Representación de Algoritmos',
       description: 'Unidad 2 donde se abordan los conceptos básicos de representación de algoritmos.',
       themeConfig: {
         siteTitle: 'Representación de </br>Algoritmos',
