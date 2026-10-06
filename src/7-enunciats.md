@@ -133,3 +133,48 @@ Crear un algoritmo para un sistema de votación que:
 - Determine el ganador
 
 **Patrones a aplicar**: Acumulación, validación, procesamiento de listas
+
+# Ejercicios Extra
+
+## Ejercicio 19
+
+Hace ya casi 18 años que entró en vigor el permiso de conducir por puntos, según el cual se restan puntos al conductor en función de las infracciones cometidas. Entre las infracciones más comunes se encuentra el exceso de velocidad. La resta de puntos por este concepto sigue las siguientes condiciones:
+- Superar el límite de velocidad entre 21 y 30 km/h: 2 puntos.
+- Sobrepasar el límite de velocidad entre 31 y 40 km/h: 3 puntos.
+- Conducir a una velocidad superior al límite establecido en más de 40
+km/h: 4 puntos.
+- Conducir superando en más del 50 % el límite de velocidad máxima
+autorizada, siempre que ello suponga superar, al menos, en 30 km/h
+dicho límite: 6 puntos. 
+
+Crea un programa con pseudocódigo o un diagrama de flujo que pida al usuario la velocidad del vehículo y la velocidad máxima de la vía, y que calcule e imprima el número de puntos que se restarán por la infracción
+
+**Ten en cuenta, además, que la velocidad puede ser correcta, e incluso ser
+incorrecta pero no conllevar sanción.**
+
+## Ejercicio 20
+
+Keep Talking and Nobody Explodes es un videojuego en grupo que trata de desactivar una bomba. En el juego, un jugador ve la bomba pero no conoce el manual de desactivación y el resto del equipo tiene el manual de desactivación pero no ve la bomba. 
+
+Entre los módulos que hay que desactivar hay uno que tiene una serie de cables de diferentes colores de los cuales hay que cortar solo uno. En este módulo puede haber diferente número de cables (entre 3 y 6) y dependiendo del número de cables las instrucciones de desactivación cambian. 
+
+**a)** Si la bomba tiene 3 cables las instrucciones de desactivación son las siguientes:
+
+- Si no hay cable rojo, corte el segundo cable.
+- Si no, en caso de que el último cable sea blanco, corte el último cable.
+- Si no, en caso de que haya más de un cable azul, corte el último cable azul.
+- Si no, corte el último cable.
+
+Crea un programa en pseudocódigo o con un diagrama de flujo que pida el color de 3 cables (c1, c2 y c3) y haga las comparaciones necesarias para indicar un mensaje al artificiero con el cable hay que cortar.
+
+Recuerda que solo puedes hacer preguntas de T | F y que debes utilizar la función *equals(...)* para comparar cadenas de texto.
+
+**NOTA**: Si el cable a cortar es el último cable rojo, el programa simplemente indicará "Corta el último cable rojo", no buscará en que posición está este cable.
+
+
+
+**b)** Entre las operaciones que hay que hacer para poder desactivar la bomba, una es saber cuantos cables son de un color concreto. 
+
+Implementa un programa en pseudocódgo o en un diagrama de flujo que pregunte al usuario el color de cada uno de los 6 cables (c1,c2,...,c6) y luego le pida un color. El programa deberá devolver cuántos de los 6 cables tienen el color indicado. 
+
+Recuerda que solo puedes hacer preguntas de T | F y que debes utilizar la función *equals(...)* para comparar cadenas de texto.
